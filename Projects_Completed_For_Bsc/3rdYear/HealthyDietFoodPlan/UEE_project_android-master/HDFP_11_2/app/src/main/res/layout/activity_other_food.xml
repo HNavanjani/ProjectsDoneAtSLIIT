@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCFDFD"
+    android:weightSum="6"
+    tools:context=".OtherFood">
+
+    <!--Heading-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="#5CE2B7">
+
+        <TextView
+            android:layout_width="305dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="22dp"
+            android:text="Helthy Diet Food Plan"
+            android:textAlignment="center"
+            android:textColor="#FAFCFC"
+            android:textDirection="firstStrong"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </LinearLayout>
+    <!--content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#CF95AA">
+
+        <TextView
+            android:layout_width="235dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:fontFamily="cursive"
+            android:text="Other Food"
+            android:textColor="#FBFDFB"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="0dp"
+        android:layout_weight="4.6"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/almond_button"
+            android:layout_width="250dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/almonds1" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/beens1" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="128dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/oats1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </LinearLayout>
+
+    <!--Footer-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="#5CE2B7">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:src="@drawable/home" />
+    </LinearLayout>
+
+</LinearLayout>

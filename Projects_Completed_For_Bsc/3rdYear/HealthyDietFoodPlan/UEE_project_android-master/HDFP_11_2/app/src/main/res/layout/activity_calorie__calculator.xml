@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCFDFD"
+    android:weightSum="3"
+    tools:context="com.example.hdfp_11_2.Calculators_Home">
+
+
+    <!--Heading-->
+
+    <LinearLayout
+        android:id="@+id/topnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:background="#5CE2B7">
+
+        <!--
+        <ImageButton
+            android:id="@+id/menubutton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            app:srcCompat="@drawable/ic_menu" />
+-->
+        <TextView
+            android:id="@+id/apptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helthy Diet Food Plan"
+            android:textColor="#FAFCFC"
+            android:layout_gravity="center_horizontal"
+            app:fontFamily="@font/dancing_script"
+            android:textDirection="firstStrong"
+            android:textSize="35dp" />
+<!--
+        <ImageButton
+            android:id="@+id/searchbutton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:gravity="left"
+            app:srcCompat="@drawable/ic_search" />
+-->
+    </LinearLayout>
+
+    <!--Content 1 -->
+
+    <LinearLayout
+        android:id="@+id/optionline1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:id="@+id/headingBMICalculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Calorie Calculator"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+
+    <!--Content 2 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline2_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:id="@+id/labelGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15dp"
+            android:text="Gender"
+            />
+
+    </LinearLayout>
+
+
+
+    <!--Content 2 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline2_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+
+        <RadioGroup
+            android:id="@+id/radioGrp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+
+            <RadioButton
+                android:id="@+id/radioM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="Male"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioF"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:checked="false"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:text="Female"
+                />
+
+        </RadioGroup>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bodyline2_4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:id="@+id/buttonmale"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/maleicon"
+            />
+
+        <ImageView
+            android:id="@+id/buttonfemale"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/femaleicon"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bodyline2_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="0.2">
+
+        <Button
+            android:id="@+id/btnSetGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:text="Set"
+            />
+
+        <EditText
+            android:id="@+id/textGenderCalorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Gender"
+            />
+
+    </LinearLayout>
+
+
+    <!--Content 2 -->
+    <LinearLayout
+        android:id="@+id/bodyline3_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:id="@+id/labelAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:textSize="15dp"
+            android:text="Age (years)" />
+
+    </LinearLayout>
+
+    <!--Content 3 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="0.1">
+
+        <EditText
+            android:id="@+id/textAgeCalorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter Age (years)"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <!--Content 2 -->
+    <LinearLayout
+        android:id="@+id/bodyline4_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:id="@+id/labelHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginLeft="100dp"
+            android:text="Height (cm)" />
+
+    </LinearLayout>
+
+    <!--Content 4 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.1">
+
+
+
+
+        <EditText
+            android:id="@+id/textHeightCalorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter Height (cm)"
+            android:inputType="numberDecimal" />
+
+
+    </LinearLayout>
+
+
+    <!--Content 2 -->
+    <LinearLayout
+        android:id="@+id/bodyline5_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:id="@+id/labelWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginLeft="100dp"
+            android:text="Weight (kg)" />
+
+    </LinearLayout>
+
+    <!--Content 5 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.1">
+        <EditText
+            android:id="@+id/textWeightCalorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter Weight (kg)"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+
+
+    <!--Content 2 -->
+    <LinearLayout
+        android:id="@+id/bodyline6_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:id="@+id/labelLevelOfactivityt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:text="Level of activity" />
+
+        <TextView
+            android:id="@+id/labelLevelOfactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:text="_" />
+
+    </LinearLayout>
+
+    <!--Content 5 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.1">
+
+
+        <Spinner
+            android:id="@+id/activitytype"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"/>
+
+
+    </LinearLayout>
+
+
+    <!--Content 6 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <Button
+            android:id="@+id/buttonCalcCalorieResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:background="#5CE2B7"
+            android:text="CACULATE"
+            android:textSize="20dp"
+            app:fontFamily="@font/leaguegothic_regular"
+            android:textColor="#FFFFFF" />
+        <!--
+                <TextView
+                    android:id="@+id/textBMIResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Result "
+                    android:textColor="#000"
+                    android:textSize="25dp" />
+        -->
+        <Button
+            android:id="@+id/buttonShowCalorieResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="#5CE2B7"
+            android:text="Show Result"
+            android:textSize="20dp"
+            app:fontFamily="@font/leaguegothic_regular"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+
+    <!--Footer-->
+
+    <LinearLayout
+        android:id="@+id/bottomnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:background="#5CE2B7">
+
+        <ImageButton
+            android:id="@+id/homebutton"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_home" />
+
+        <!--
+
+        <ImageButton
+            android:id="@+id/settingsbutton"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:layout_marginLeft="190dp"
+            app:srcCompat="@drawable/ic_settings" />
+-->
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In Page</title>
+
+    <script src="https://kit.fontawesome.com/0e0930589e.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function convert(str) {
+            var date = new Date(str),
+                mnth = ("0" + (date.getMonth() + 1)).slice(-2),
+                day = ("0" + date.getDate()).slice(-2);
+            return [date.getFullYear(), mnth, day].join("-");
+        }
+
+        function loginUser() {
+            var email=$('#email').val();
+            var password=$('#password').val();
+            //var utype=$('#utype').val();
+
+            var objectToSend = {
+                email:email,
+                password:password};
+            $.post('http://localhost:3000/user/login', objectToSend , function(response){
+                user_id = response.id;
+                alert(response.message);
+
+                if(response.utype == 5){
+                    //to be changed into admin page
+                    window.location.href = "../html/admin/adminFunction.html";
+                }
+                if(response.utype == 1){//manager
+                    window.location.href = "../html/PublicTransportManagerFunctions.html";
+                }
+                if(response.utype == 2){//local passenger
+                    var $idd=user_id;
+                    $.ajax({
+                        type: "GET",
+                        dataType: "json",
+                        url: "http://localhost:3000/localPassenger/id/"+$idd,
+                        success: function(data){
+                            var initial_amount_status = data.result.initialamountstatus;
+                            if (initial_amount_status == 1){
+                                //to be changed
+                                window.location.href = "../html/local_passenger.html";
+                            }else{
+                                alert("Do your payments first");
+                                window.location.href = "../html/localpassenger_initialpayment.html";
+                            }
+
+                        }
+                    });
+                }
+                if(response.utype == 3){//Foreign passenger
+                    var $idfp=user_id;
+                    $.ajax({
+                        type: "GET",
+                        dataType: "json",
+                        url: "http://localhost:3000/foreignPassenger/id/"+$idfp,
+                        success: function(data){
+                            var expire_date = data.result.expireDate;
+                            date1 = new Date();
+                            date2 = convert(date1.toString());
+                            //console.log(date2);
+                            var expdate = expire_date.toString();
+                            var moddate = expdate.substring(0, 10);
+                           // console.log(moddate);
+                            if(moddate >= date2){
+                                //to be changed
+                                window.location.href = "../html/foreign_passenger_dashboard.html";
+                            }else{
+                                alert('Your account has been axpired');
+                            }
+
+                        }
+                    });
+                }
+                if(response.utype == 4){//inspector
+                    //to be changed into inspector page
+                    window.location.href = "../html/InspectorFunctions.html";
+                }
+            });
+        }
+    </script>
+
+</head>
+<body>
+
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        </form>
+    </div>
+</nav>
+
+<!--Sign In form-->
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <div class="jumbotron">
+            <h1 class="display-3">Sign In</h1>
+            <form id="loginForm">
+                <fieldset>
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="register" onclick="loginUser()"><span></span>Login</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+
+</body>
+</html>

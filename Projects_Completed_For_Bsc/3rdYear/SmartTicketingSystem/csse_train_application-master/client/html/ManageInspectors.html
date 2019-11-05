@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ticketing System</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+
+    <script src="../jQuery/jquery.js"></script>
+    <script src="../javaScripts/ManageInspectors.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <h1>Manage Inspectors</h1>
+    <h2>Inspectors</h2>
+    <ul id="inspectors"></ul>
+    <template id="inspector-template">
+      <li data-id="{{ _id }}">
+        <p>
+          <strong>usertype</strong>
+          <span class="noedit usertype">{{ usertype }}</span>
+          <input class="edit usertype" />
+        </p>
+        <p>
+          <strong>username</strong>
+          <span class="noedit username">{{ username }}</span>
+          <input class="edit username" />
+        </p>
+
+        <p>
+          <strong>password</strong>
+          <span class="noedit password">{{ password }}</span>
+          <input class="edit password" />
+        </p>
+
+        <p>
+          <strong>name</strong>
+          <span class="noedit name">{{ name }}</span>
+          <input class="edit name" />
+        </p>
+
+        <p>
+          <strong>emailaddress</strong>
+          <span class="noedit emailaddress">{{ emailaddress }}</span>
+          <input class="edit emailaddress" />
+        </p>
+
+        <p>
+          <strong>phone</strong>
+          <span class="noedit phone">{{ phone }}</span>
+          <input class="edit phone" />
+        </p>
+
+        <button data-id="{{ _id }}" class="remove">
+          X
+        </button>
+
+        <button class="editInspector noedit">EDIT</button>
+        <button class="saveEdit edit">SAVE</button>
+        <button class="cancelEdit edit">CANCEL</button>
+      </li>
+    </template>
+
+    <h4>Add Inspector Details</h4>
+    <p>usertype : <input type="text" id="usertype" /></p>
+    <p>username: <input type="text" id="username" /></p>
+    <p>password: <input type="text" id="password" /></p>
+    <p>name: <input type="text" id="name" /></p>
+    <p>emailaddress: <input type="text" id="emailaddress" /></p>
+    <p>phone: <input type="text" id="phone" /></p>
+    <button id="add-inspector">ADD</button>
+  </body>
+</html>

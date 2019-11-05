@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Function</title>
+
+    <script src="https://kit.fontawesome.com/0e0930589e.js"></script>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function logout() {
+            window.location.href = "../../index.html";
+        }
+        //manager
+        function createManager() {
+            window.location.href = "../SignUp.html";
+        }
+        function UpdateManager() {
+            window.location.href = "./updateManager.html";
+        }
+        function deleteManager() {
+            window.location.href = "../SignUp.html";
+        }
+        //Local Passenger
+        function createLP() {
+            window.location.href = "../SignUp.html";
+        }
+        function updateLP() {
+            window.location.href = "../SignUp.html";
+        }
+        function deleteLP() {
+            window.location.href = "../SignUp.html";
+        }
+        //Foreign passenger
+        function createFP() {
+            window.location.href = "../SignUp.html";
+        }
+        function updateFP() {
+            window.location.href = "../SignUp.html";
+        }
+        function deleteFP() {
+            window.location.href = "../SignUp.html";
+        }
+        //Routes
+        function fn() {
+            window.location.href = "";
+        }
+        function gn() {
+            window.location.href = "";
+        }
+        function pm() {
+            window.location.href = "";
+        }
+    </script>
+
+</head>
+<body>
+
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <button type="button" class="btn btn-secondary my-2 my-sm-0" onclick="logout()">Sign Out</button>
+        </form>
+    </div>
+</nav>
+
+<!--container-->
+<div class="jumbotron">
+    <h1 class="display-3">Admin Functions</h1>
+    <hr class="my-4">
+
+</div>
+
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3">
+        <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+            <div class="card-header">Manage Manager Accounts</div>
+            <div class="card-body">
+                <button type="button" class="btn btn-secondary" onclick="createManager()">Create New Manager</button>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-secondary" onclick="UpdateManager()">Update Manager Information</button>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-secondary" onclick="deleteManager()">Delete Manager Information</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Manage Local Passenger Accounts</div>
+            <div class="card-body">
+                <button type="button" class="btn btn-success" onclick="createLP()">Create New Local Passenger</button>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-success" onclick="updateLP()">Update Local Passenger</button>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-success" onclick="deleteLP()">Delete Local Passenger</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3">
+        <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+            <div class="card-header">Manage Foreign Passenger Accounts</div>
+            <div class="card-body">
+                <button type="button" class="btn btn-secondary" onclick="createFP()">Create New Foreign Passenger</button>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-secondary" onclick="updateFP()">Update Foreign Passenger</button>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-secondary" onclick="deleteFP()">Delete Foreign Passenger</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3"><!--Manage Routes-->
+        <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+            <div class="card-header">Manage Routs</div>
+            <div class="card-body">
+                <button type="button" class="btn btn-primary" onclick="">Primary</button>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-primary" onclick="">Primary</button>
+            </div>
+            <div class="card-body">
+                <button type="button" class="btn btn-primary" onclick="">Primary</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+</body>
+</html>

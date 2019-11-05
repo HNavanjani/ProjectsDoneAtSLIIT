@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCFDFD"
+    tools:context=".MBFlavouredWater">
+
+    <!--Heading-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#5CE2B7">
+
+        <TextView
+            android:layout_width="305dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Helthy Diet Food Plan"
+            android:textAlignment="center"
+            android:textColor="#FAFCFC"
+            android:textDirection="firstStrong"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+    <!--Content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="424dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="#2E7EBE"
+            android:fontFamily="cursive"
+            android:text="           Flavoured Water"
+            android:textColor="#FBFDFB"
+            android:textSize="30dp" />
+
+        <ViewFlipper
+            android:id="@+id/flavoured_water_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="210dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#F4F7F6">
+                <!--Let's make it-->
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#2E7EBE"
+                    android:fontFamily="cursive"
+                    android:text="Let's Make It"
+                    android:textColor="#F6F7F7"
+                    android:textSize="40dp" />
+
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BFD7EB"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="2 liters of water"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BFD7EB"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="1 teaspoon of freshly granted ginger"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BFD7EB"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="1 medium cucumber, peeled and thinly sliced"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#BFD7EB"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="12 small spearmint leaves"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+                <!--How do we make it-->
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#2E7EBE"
+                    android:fontFamily="cursive"
+                    android:text="How Do we make it"
+                    android:textColor="#F3F7F6"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#C2CCC2"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Mix all ingredients together and refrigerate overnight"
+                    android:textColor="#102FDD"
+                    android:textSize="25dp" />
+                <!--Benefits-->
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#2E7EBE"
+                    android:fontFamily="cursive"
+                    android:text="Benefits........."
+                    android:textColor="#FBFDFB"
+                    android:textSize="40dp" />
+
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#5CE2B7"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="General Benefits"
+                    android:textColor="#F4FAF9"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#DFDEDA"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Increase your metabolism"
+                    android:textColor="#009688"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#DFDEDA"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Lose your weight"
+                    android:textColor="#009688"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#DFDEDA"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Lower your cholesterol levels"
+                    android:textColor="#009688"
+                    android:textSize="25dp" />
+                <!--Ginger-->
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FBFDFB"
+                    android:fontFamily="cursive"
+                    android:text="Ginger"
+                    android:textColor="#855107"
+                    android:textSize="30dp" />
+                <ImageView
+                    android:layout_width="339dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ginger"/>
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#855107"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Can prevent from gut problems such as gastritis, diarrhea,stomac upset"
+                    android:textColor="#FBFCFC"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#855107"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Improve brain function(anti-clotting and anti-microbial)"
+                    android:textColor="#FBFCFC"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

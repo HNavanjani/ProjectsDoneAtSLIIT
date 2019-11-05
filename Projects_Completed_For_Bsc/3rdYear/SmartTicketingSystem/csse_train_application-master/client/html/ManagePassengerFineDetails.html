@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ticketing System</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+ 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../javaScripts/ManageTokenValidity.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+     <!--Navigation bar-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <a class="navbar-brand" href="./InspectorFunctions.html">Dashboard</a>
+        <a class="navbar-brand" href="./InspectorFunctions.html">Log Out</a>
+        
+        </div>
+      </nav>
+    <!--Heading-->
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Manage Passenger Fine Details</h1>
+        <p class="lead">
+          - Pay rules violated passenger’s fine via inspector
+           
+        </p>
+      </div>
+    </div>
+
+    <!--Sub Functions2-->
+    <h1>
+        Pay rules violated passenger’s fine via inspector
+    </h1>
+
+   <!--Load invalid journey details-->
+  <h1>
+      <span class="badge badge-secondary">User Details</span></h1>
+      <div class="list-group">
+          <ul id="localusers"></ul>
+          <template id="localuser-template">
+            <li class="list-group-item list-group-item" data-id="{{ _id }}">
+              
+                <p>
+                    <strong>ID</strong>
+                    <span class="noedit _id">{{ _id }}</span>
+                    <input class="edit _id" />
+                  </p>
+
+                  <p>
+                      <strong>Name</strong>
+                      <span class="noedit lPassengerName">{{ lPassengerName }}</span>
+                      <input class="edit lPassengerName" />
+                    </p>
+
+                    <p>
+                        <strong>Fine</strong>
+                        <span class="noedit fineamount">{{ fineamount }}</span>
+                        <input class="edit fineamount" />
+                      </p>
+      
+              <button class="addfine noedit btn btn-warning">Pay Fine via Inspector</button>
+              <button class="payFine edit btn btn-success">PAY</button>
+              <button class="cancelEdit edit btn btn-secondary">CANCEL</button>
+             
+            
+            </li>
+          </template>
+      
+      </div>
+  
+  </body>
+</html>

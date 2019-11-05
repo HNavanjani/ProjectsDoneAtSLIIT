@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:weightSum="3"
+    tools:context="com.example.hdfp_11_2.Calculators_Home">
+
+
+    <!--Heading-->
+
+    <LinearLayout
+        android:id="@+id/topnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="#5CE2B7"
+        android:orientation="vertical">
+
+        <!--
+
+        <ImageButton
+            android:id="@+id/menubutton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            app:srcCompat="@drawable/ic_menu" />
+-->
+        <TextView
+            android:id="@+id/apptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="Helthy Diet Food Plan"
+            android:textColor="#FAFCFC"
+            app:fontFamily="@font/dancing_script"
+            android:textDirection="firstStrong"
+            android:textSize="35dp"
+            />
+
+        <!--
+
+        <ImageButton
+            android:id="@+id/searchbutton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:gravity="left"
+            app:srcCompat="@drawable/ic_search" />
+-->
+    </LinearLayout>
+
+    <!--Content 1 -->
+
+    <LinearLayout
+        android:id="@+id/optionline1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/headingBMICalculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Body Fat Calculator"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <!--Content 3 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/valueBodyFatResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Your Body Fat Precentage is :" />
+
+        <TextView
+            android:id="@+id/textResultBodyFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Result "
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+
+    <!--Content 4 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/waistToHipMean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/bodyfatcat" />
+
+    </LinearLayout>
+
+
+    <!--Content 4 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonBodyFatTryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#5CE2B7"
+            android:text="Try Again"
+            android:textSize="20dp"
+            app:fontFamily="@font/leaguegothic_regular"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/ButtonBodyFatShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#5CE2B7"
+            android:text="Share"
+            android:textSize="20dp"
+            app:fontFamily="@font/leaguegothic_regular"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+    <!--Footer-->
+
+    <LinearLayout
+        android:id="@+id/bottomnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="#5CE2B7"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/homebutton"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_home" />
+
+        <!--
+
+        <ImageButton
+            android:id="@+id/settingsbutton"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:layout_marginLeft="190dp"
+            app:srcCompat="@drawable/ic_settings" />
+-->
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+

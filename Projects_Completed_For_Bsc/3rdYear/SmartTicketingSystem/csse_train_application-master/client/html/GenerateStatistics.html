@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ticketing System</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../javaScripts/ManageTokenValidity.js"></script>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <a class="navbar-brand" href="./PublicTransportManagerFunctions.html">Dashboard</a>
+        <a class="navbar-brand" href="./InspectorFunctions.html">Log Out</a>
+        
+        </div>
+      </nav>
+    <!--Heading-->
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Generate Statistical Reports</h1>
+        <p class="lead">
+          - Generate statistical reports to analyse different situations
+        </p>
+        <p>
+            <ul id="journeryDate"></ul>
+         
+           
+          </p>
+      </div>
+    </div>
+    <!--Sub function1-->
+    <h1>
+      Find how many passengers use different parts of the network at different times
+      of day and on different days of the week
+    </h1>
+    <ul id="journeycount"></ul>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="lblstart">Location</label>
+          <select id="inputstartinglocation" class="form-control">
+            <option >Choose...</option>
+            <option>Jaffna</option>
+            <option>Matara</option>
+           
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="lblfrom">Hour</label>
+          <select id="inputfrom" class="form-control">
+            <option selected>Choose...</option>
+            <option>00</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+          </select>
+        </div>
+      </div>
+      <button type="button" id="displaytravelinfo"class="btn btn-primary">
+        Display Travel Information
+      </button>
+    </form>
+    <br />
+
+    <!--CHART for network traffic stats-->
+ <canvas id="chartnetworktraffic" width="400" height="400"></canvas>
+
+ <!--Sub function 2-->
+   <h1>
+    Find how often the ticket inspectors discover people travelling without a valid
+    ticket
+  </h1>
+
+  <ul id="invalidjourneycount"></ul>
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="lblstart">Location</label>
+        <select id="inputstartinglocationinvalid" class="form-control">
+          <option >Choose...</option>
+          <option>Jaffna</option>
+          <option>Matara</option>
+          <option>Kandy</option>
+         
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="lblfrom">Hour</label>
+        <select id="inputfrominvalid" class="form-control">
+          <option selected>Choose...</option>
+          <option>00</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+        </select>
+      </div>
+    </div>
+    <button type="button" id="displayinvalidjourneydetails"class="btn btn-primary">
+      Display Invalid Journey Details
+    </button>
+  </form>
+  <br />
+
+  <!--CHART for invalid journey details stats-->
+<canvas id="chartnetinvalidjurneydetails" width="400" height="400"></canvas>
+
+<!--Sub function 3-->
+    <h1>
+      Fares collected from passengers within journeys that have been taken
+    </h1>
+
+    <ul id="fareinfo"></ul>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="lblstart">Location</label>
+          <select id="inputstartinglocationfare" class="form-control">
+            <option >Choose...</option>
+            <option>Jaffna</option>
+            <option>Matara</option>
+            <option>Kandy</option>
+           
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="lblfrom">Hour</label>
+          <select id="inputfromfare" class="form-control">
+            <option selected>Choose...</option>
+            <option>00</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+          </select>
+        </div>
+      </div>
+      <button type="button" id="displayfaredetails"class="btn btn-primary">
+        Display Journey Fare Information
+      </button>
+    </form>
+    <br />
+  
+    <!--CHART for fare details stats-->
+  <canvas id="chartfaredetails" width="400" height="400"></canvas>
+ 
+  </body>
+</html>

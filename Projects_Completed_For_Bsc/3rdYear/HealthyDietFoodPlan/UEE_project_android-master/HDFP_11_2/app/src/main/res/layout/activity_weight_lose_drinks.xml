@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCFDFD"
+    android:weightSum="6"
+    tools:context=".WeightLoseDrinks">
+
+    <!--Heading-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="#5CE2B7">
+
+        <TextView
+            android:layout_width="305dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="22dp"
+            android:text="Helthy Diet Food Plan"
+            android:textAlignment="center"
+            android:textColor="#FAFCFC"
+            android:textDirection="firstStrong"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </LinearLayout>
+    <!--content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#9EC9EB">
+
+        <TextView
+            android:layout_width="339dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="cursive"
+            android:text="Let's Lose Weight"
+            android:textColor="#FBFDFB"
+            android:textSize="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </LinearLayout>
+    <!--Weight Lose Drinks-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="339dp"
+            android:layout_height="92dp">
+
+            <Button
+                android:id="@+id/citrus_drink_button"
+                android:layout_width="161dp"
+                android:layout_height="92dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/citrus_drink" />
+
+            <Button
+                android:layout_width="182dp"
+                android:layout_height="92dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/coffee3d"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="339dp"
+            android:layout_height="92dp">
+
+            <Button
+                android:id="@+id/green_tea_button"
+                android:layout_width="161dp"
+                android:layout_height="92dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/greenteaandmint"/>
+
+            <Button
+                android:layout_width="182dp"
+                android:layout_height="92dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ccwater"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="339dp"
+            android:layout_height="92dp">
+
+            <Button
+                android:id="@+id/tomato_drink_button"
+                android:layout_width="161dp"
+                android:layout_height="92dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/tomato_fat_burner1"/>
+
+            <Button
+                android:layout_width="182dp"
+                android:layout_height="92dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/kale_and_acv1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="339dp"
+            android:layout_height="92dp">
+
+            <Button
+                android:layout_width="161dp"
+                android:layout_height="92dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/lemanade1"/>
+
+            <Button
+                android:layout_width="182dp"
+                android:layout_height="92dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/cinnamon_papaya1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="111dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </LinearLayout>
+    <!--Recommended Best Drinks-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+
+        <Button
+            android:id="@+id/recom_best_drinks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CF95AA"
+            android:text="Recommended Best Drinks"
+            android:textSize="27dp"
+            android:fontFamily="cursive"
+            android:textColor="#FBFDFB"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </LinearLayout>
+    <!--Footer-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="#5CE2B7">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:src="@drawable/home" />
+    </LinearLayout>
+
+</LinearLayout>

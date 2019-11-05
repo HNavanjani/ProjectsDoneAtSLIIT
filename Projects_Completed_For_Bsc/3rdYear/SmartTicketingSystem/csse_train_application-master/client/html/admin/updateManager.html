@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Manager</title>
+
+    <script src="https://kit.fontawesome.com/0e0930589e.js"></script>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function loadtable() {
+            //var userid = $('#userid').val();
+            //var $idd = userid;
+            //console.log(userid);
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "http://localhost:3000/manager",
+                success: function(data){
+                   console.log(data.train);
+                   var items = [];
+                    var table = $("#tbl");
+                   $.each(data.train, function (key, val) {
+                      items.push("<tr>");
+                      items.push("td id=''"+key+"''>"+val._id+"</td>");
+                       items.push("td id=''"+key+"''>"+val.managerName+"</td>");
+                       items.push("td id=''"+key+"''>"+val.ManagerAge+"</td>");
+                       items.push("</tr>");
+                   });
+                   $("<tbody/>", {html: items.join("")}).appendTo(table);
+                }
+            });
+        }
+
+
+        function logout() {
+            window.location.href = "../../index.html";
+        }
+        function getUser(){
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "http://localhost:3000/manager",
+                success: function(data){
+                    console.log(data.train);
+                }
+            });
+        }
+        function updateManager(){
+
+            $.put = function(url, data, callback, type){
+
+                if ( $.isFunction(data) ){
+                    type = type || callback,
+                        callback = data,
+                        data = {}
+                }
+
+                return $.ajax({
+                    url: url,
+                    type: 'PUT',
+                    success: callback,
+                    data: data,
+                    contentType: type
+                });
+            }
+
+            console.log("hii");
+            var $idd="5d9312510ef5912accb6f270";
+
+            $.put('http://localhost:3000/train/id/'+$idd, {tname:'tin tin'}, function(result){
+                console.log(result);
+            })
+        }
+    </script>
+</head>
+<body>
+<!--Navigation bar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit" onclick="logout()">Sign Out</button>
+        </form>
+    </div>
+</nav>
+<button type="button" class="btn btn-primary" onclick="loadtable()">Primary</button>
+<!--table-->
+<table class="table table-hover" id="tbl">
+    <thead>
+    <tr>
+        <th scope="col">Manager ID</th>
+        <th scope="col">Manager Name</th>
+        <th scope="col">Manager's Age</th>
+    </tr>
+    </thead>
+</table>
+<!--Update form-->
+<div class="row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <div class="jumbotron">
+            <h1 class="display-3">Update Manager</h1>
+            <form id="loginForm">
+                <fieldset>
+                    <div class="form-group">
+                        <label>Manager Name</label>
+                        <input type="text" class="form-control" id="mFullName" aria-describedby="emailHelp" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input type="text" class="form-control" id="age" aria-describedby="emailHelp" placeholder="Age">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="register" onclick="updateManager()"><span></span>Update</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ticketing System</title>
+     <!--JQery-->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="../js/localpassenger/jquery.js"></script>
+     <script>
+
+
+        function registerUser() {
+            console.log('hi');
+            var tname=$('#tname').val();
+            console.log(tname);
+            var startstation=$('#startstation').val();
+            var destination=$('#destination').val();
+            var distance=$('#distance').val();
+            var fare=$('#fare').val();
+            console.log(fare);
+            var objectToSend = {
+              tname:tname,
+              startstation:startstation,
+              destination:destination,
+              distance:distance,
+              fare:fare};
+            $.post('http://localhost:3000/train', objectToSend , function(response){
+                console.log(response);
+            });
+        }
+
+
+        function getUser(){
+          $.ajax({ 
+   type: "GET",
+   dataType: "json",
+   url: "http://localhost:3000/train",
+   success: function(data){
+     console.log(data.train[0].tname);
+     
+
+//      jQuery.each(substr, function(i, data) {
+//     // do something with `item` (or `this` is also `item` if you like)
+// });
+   }
+});
+        }
+
+        function putTrain(){
+          var tname=$('#tname').val();
+            console.log(tname);
+            var startstation=$('#startstation').val();
+            var destination=$('#destination').val();
+            var distance=$('#distance').val();
+            var fare=$('#fare').val();
+            console.log(fare);
+            var objectToSend = {
+              tname:tname,
+              startstation:startstation,
+              destination:destination,
+              distance:distance,
+              fare:fare};
+            $.post('http://localhost:3000/train', objectToSend , function(response){
+                console.log(response);
+            });
+        }
+
+
+        function getdata(){
+          var $idd="5d9312510ef5912accb6f270";
+          $.ajax({ 
+   type: "GET",
+   dataType: "json",
+   url: "http://localhost:3000/train/id/"+$idd,
+   success: function(data){        
+     console.log(data);
+
+   }
+});
+
+        }
+
+
+        function updateloan(){
+
+$.put = function(url, data, callback, type){
+
+if ( $.isFunction(data) ){
+type = type || callback,
+callback = data,
+data = {}
+}
+
+return $.ajax({
+url: url,
+type: 'PUT',
+success: callback,
+data: data,
+contentType: type
+});
+}
+
+console.log("hii");
+var $idd="5d96cd008b99e11e6483f86c";
+
+$.put('http://localhost:3000/applyloan/id/'+$idd, {finestatus:1,fineamount:852}, function(result){
+console.log(result);
+}) 
+}
+
+
+
+     </script>
+  </head>
+  <body>
+    <form id="registerForm">
+      <fieldset>
+          <div class="form-group">
+              <label>tname</label>
+              <input type="text" class="form-control" id="tname" aria-describedby="emailHelp" placeholder="Enter Full Name">
+          </div>
+          <div class="form-group row">
+              <label>startstation</label>
+              <input type="text" class="form-control" id="startstation" aria-describedby="emailHelp" placeholder="Enter Username">
+          </div>
+          <div class="form-group">
+              <label>destination</label>
+              <input type="email" class="form-control" id="destination" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+              <label>distance</label>
+              <input type="password" class="form-control" id="distance" placeholder="Password">
+          </div>
+          <div class="form-group">
+              <label>fare</label>
+              <input type="text" class="form-control" id="fare" aria-describedby="emailHelp" placeholder="Enter Age">
+          </div>
+          
+          <button type="button" class="btn btn-primary" id="register" onclick="registerUser()"><span></span>Register User</button>
+          <button type="button" class="btn btn-primary" id="register" onclick="getUser()"><span></span>Register User</button>
+          <button type="button" class="btn btn-primary" id="register" onclick="getdata()"><span></span>Register User</button>
+          <br/><br/>
+
+          <button type="button" class="btn btn-primary" id="register" onclick="updateloan()"><span></span>updateloan</button>
+      </fieldset>
+  </form>
+  </body>
+</html>

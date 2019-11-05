@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+
+    android:weightSum="3"
+    tools:context="com.example.hdfp_11_2.Calculators_Home">
+
+
+    <!--Heading-->
+
+    <LinearLayout
+        android:id="@+id/topnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:background="#5CE2B7">
+
+        <!--
+
+        <ImageButton
+            android:id="@+id/menubutton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            app:srcCompat="@drawable/ic_menu" />
+-->
+        <TextView
+            android:id="@+id/apptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Helthy Diet Food Plan"
+            android:textColor="#FAFCFC"
+            app:fontFamily="@font/dancing_script"
+            android:textDirection="firstStrong"
+            android:layout_gravity="center_horizontal"
+            android:textSize="35dp" />
+<!--
+        <ImageButton
+            android:id="@+id/searchbutton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:gravity="left"
+            app:srcCompat="@drawable/ic_search" />
+-->
+    </LinearLayout>
+
+    <!--Content 1 -->
+
+    <LinearLayout
+        android:id="@+id/optionline1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:id="@+id/headingBMICalculator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="BMI Calculator"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <!--Content 2 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.9">
+
+        <Button
+            android:id="@+id/BMIgaugeview"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bmichart_2"
+
+           />
+
+
+    </LinearLayout>
+
+    <!--Content 3 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/labelBMIResultView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Your Calculated BMI Result is "
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bodyline5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.4">
+
+        <TextView
+            android:id="@+id/valueBMIResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result "
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/bmimtericResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bodyline6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:id="@+id/valueGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:text="Gender"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/valueAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="Age"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/valueHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="Height"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/valueWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="Weight"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+
+
+
+    </LinearLayout>
+
+    <!--Content 4 -->
+
+    <LinearLayout
+        android:id="@+id/bodyline4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonBMITryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#5CE2B7"
+            android:layout_gravity="center_horizontal"
+            android:text="Try Again"
+            android:textSize="20dp"
+            app:fontFamily="@font/leaguegothic_regular"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/ButtonBMIShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#5CE2B7"
+            android:layout_gravity="center_horizontal"
+            android:text="Share"
+            android:textSize="20dp"
+            app:fontFamily="@font/leaguegothic_regular"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+
+    <!--Footer-->
+
+    <LinearLayout
+        android:id="@+id/bottomnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="#5CE2B7"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:id="@+id/homebutton"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            app:srcCompat="@drawable/ic_home"
+            android:layout_gravity="center_horizontal"/>
+<!--
+        <ImageButton
+            android:id="@+id/settingsbutton"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:layout_marginLeft="190dp"
+            app:srcCompat="@drawable/ic_settings" />
+-->
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+

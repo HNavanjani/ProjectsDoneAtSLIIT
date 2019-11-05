@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCFDFD"
+    android:weightSum="6"
+    tools:context=".RecommendedDrinks">
+
+    <!--Heading-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="#5CE2B7">
+
+        <TextView
+            android:layout_width="305dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Helthy Diet Food Plan"
+            android:textAlignment="center"
+            android:textColor="#FAFCFC"
+            android:textDirection="firstStrong"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </LinearLayout>
+    <!--content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#CF95AA">
+
+        <TextView
+            android:layout_width="311dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="cursive"
+            android:text="Recommended Best Drinks"
+            android:textColor="#FBFDFB"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.2"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="389dp"
+                android:layout_height="92dp">
+
+                <Button
+                    android:layout_width="168dp"
+                    android:layout_height="92dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/yoghurt_smoothie1" />
+
+                <Button
+                    android:layout_width="168dp"
+                    android:layout_height="92dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/waterglass1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="339dp"
+                android:layout_height="92dp">
+
+                <Button
+                    android:id="@+id/green_tea_button"
+                    android:layout_width="168dp"
+                    android:layout_height="92dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/greenteaandmint" />
+
+                <Button
+                    android:layout_width="168dp"
+                    android:layout_height="92dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/whey_protein1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="339dp"
+                android:layout_height="92dp">
+
+                <Button
+                    android:layout_width="168dp"
+                    android:layout_height="92dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/skimmed_milk1" />
+                <Button
+                    android:layout_width="168dp"
+                    android:layout_height="92dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/coconutwater1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="339dp"
+                android:layout_height="92dp">
+
+                <Button
+                    android:layout_width="168dp"
+                    android:layout_height="92dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/blackcoffee1" />
+                <Button
+                    android:layout_width="168dp"
+                    android:layout_height="92dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/cranberry1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="339dp"
+                android:layout_height="98dp">
+
+                <Button
+                    android:layout_width="182dp"
+                    android:layout_height="92dp"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/vegetable_juice1" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--Footer-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="#5CE2B7">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:src="@drawable/home" />
+    </LinearLayout>
+
+
+</LinearLayout>

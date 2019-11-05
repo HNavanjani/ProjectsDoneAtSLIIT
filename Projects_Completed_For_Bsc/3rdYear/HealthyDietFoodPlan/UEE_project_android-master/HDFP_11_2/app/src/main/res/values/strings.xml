@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="string1">Very Severely UnderWeight</string>
+    <string name="string2">Severely UnderWeight</string>
+    <string name="string3">Normal (Healthy Weight) </string>
+
+    <string name="string4">Over Weight</string>
+    <string name="string5">Obese Class 1 (Moderately Obese)</string>
+    <string name="string6">Obese Class 2 (Severely Obese)</string>
+
+    <string name="string7">Obese Class 3 (Very Severely Obese)</string>
+    <string-array name="weightmetrics">
+        <item>kg</item>
+        <item>pounds</item>
+        <item>stones(+lb)</item>
+    </string-array>
+    <string-array name="heightmetrics">
+        <item>cm</item>
+        <item>inches</item>
+        <item>feet(+in)</item>
+    </string-array>
+    <string-array name="activitytype_array">
+        <item>Sedentary: individuals who perform little to no exercise</item>
+        <item>Lightly active: light exercise fewer than 3 days per week</item>
+        <item>Moderately active: moderate exercise most days of the week</item>
+        <item>Very active: hard exercise every day</item>
+        <item>Extra active: strenuous exercise 2 or more times per day</item>
+    </string-array>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="btn_display">Display</string>
+</resources>

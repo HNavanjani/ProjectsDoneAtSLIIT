@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCFDFD"
+    tools:context=".Apples">
+
+    <!--Heading-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#5CE2B7">
+
+        <TextView
+            android:layout_width="305dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="22dp"
+            android:text="Helthy Diet Food Plan"
+            android:textAlignment="center"
+            android:textColor="#FAFCFC"
+            android:textDirection="firstStrong"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+    <!--Content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="424dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="#EE8188"
+            android:fontFamily="cursive"
+            android:text="               Apples"
+            android:textColor="#FBFDFB"
+            android:textSize="30dp" />
+
+        <ViewFlipper
+            android:id="@+id/apples_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="155dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#5CE2B7">
+                <!--Let's make it-->
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EE8188"
+                    android:fontFamily="cursive"
+                    android:text="Nutritional Value"
+                    android:textColor="#F6F7F7"
+                    android:textSize="40dp" />
+
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="fibre"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Vitamin A"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Manganese"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Magnesium"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+                <!--How do we make it-->
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#EE8188"
+                    android:fontFamily="cursive"
+                    android:text="More about Cauliflower"
+                    android:textColor="#F3F7F6"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Helps lowering cholesterol level"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Low calorie diet"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Source of mono and polyusaturated fats"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Crust lean protein"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

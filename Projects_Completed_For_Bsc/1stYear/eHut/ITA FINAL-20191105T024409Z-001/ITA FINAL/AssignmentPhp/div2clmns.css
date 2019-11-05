@@ -1,0 +1,23 @@
+body{
+    background-color:#6666ff ;
+}
+
+
+#container {
+    width:960px;
+    margin:20px auto;
+}
+
+#content {
+    float:left;
+    width:620px;
+}
+
+#sidebar {
+    float:left;
+    width:340px;
+}
+
+#footer {
+    clear:both;
+}

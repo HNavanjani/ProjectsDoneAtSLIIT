@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hdfp_11_2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Almonds"></activity>
+        <activity android:name=".loosing_tummy2"></activity>
+        <activity android:name=".stopwatch" />
+        <activity android:name=".day10" />
+        <activity android:name=".day9" />
+        <activity android:name=".day8" />
+        <activity android:name=".day7" />
+        <activity android:name=".day6" />
+        <activity android:name=".day5" />
+        <activity android:name=".day4" />
+        <activity android:name=".day3" />
+        <activity android:name=".day2" />
+        <activity android:name=".day1" />
+        <activity android:name=".loosingtummy3" />
+        <activity android:name=".loosing_tummy1" />
+        <activity android:name=".Apples" />
+        <activity android:name=".Cauliflower" />
+        <activity android:name=".OtherFood" />
+        <activity android:name=".PureFruits" />
+        <activity android:name=".PureVegetables" />
+        <activity android:name=".ABC" />
+        <activity android:name=".GCWheatgrassDrink" />
+        <activity android:name=".MBFlavouredWater" />
+        <activity android:name=".LWGreenTea" />
+        <activity android:name=".RecommendedDrinks" />
+        <activity android:name=".GutCleanserDrinks" />
+        <activity android:name=".MetabolismBoostingDrinks" />
+        <activity android:name=".WeightLoseDrinks" />
+        <activity android:name=".LWCitrusDrink" />
+        <activity android:name=".HealthyFood" />
+        <activity android:name=".HealthyDrinks" />
+        <activity android:name=".FoodDrinks" />
+        <activity android:name=".Calculators_Home" />
+        <activity android:name=".WaistToHip_Result" />
+        <activity android:name=".WaistToHip_Calculator" />
+        <activity android:name=".WaistToHip_Home" />
+        <activity android:name=".Calorie_Result" />
+        <activity android:name=".Calorie_Calculator" />
+        <activity android:name=".Calorie_Home" />
+        <activity android:name=".BodyFat_Result" />
+        <activity android:name=".BodyFat_Calculator" />
+        <activity android:name=".BodyFat_Home" />
+        <activity android:name=".BMI_Result" />
+        <activity android:name=".BMI_Calculator" />
+        <activity android:name=".BMI_Home" />
+        <activity android:name=".ExerciseHome" />
+        <activity android:name=".FoodsToAvoidDay05" />
+        <activity android:name=".FoodsToAvoidDay07" />
+        <activity android:name=".FoodsToAvoidDay06" />
+        <activity android:name=".FoodsToAvoidDay04" />
+        <activity android:name=".FoodsToAvoidDay03" />
+        <activity android:name=".FoodsToAvoidDay02" />
+        <activity android:name=".FoodsToAvoidDay01" />
+        <activity android:name=".Day01TipsToFollow" />
+        <activity android:name=".Day07TipsToFollow" />
+        <activity android:name=".Day06TipsToFollow" />
+        <activity android:name=".Day05TipsToFollow" />
+        <activity android:name=".Day04TipsToFollow" />
+        <activity android:name=".Day03TipsToFollow" />
+        <activity android:name=".Day02TipsToFollow" />
+        <activity android:name=".NonVegDaySeven" />
+        <activity android:name=".NonVegDaySix" />
+        <activity android:name=".NonVegDayFive" />
+        <activity android:name=".NonVegDayFour" />
+        <activity android:name=".NonVegDayThree" />
+        <activity android:name=".DietPlanHome" />
+        <activity android:name=".NonVegDayTwo" />
+        <activity android:name=".NonVegDayOne" />
+        <activity android:name=".Main_Dashboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

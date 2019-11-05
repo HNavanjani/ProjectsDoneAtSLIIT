@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCFDFD"
+    android:weightSum="3"
+    tools:context="com.example.hdfp_11_2.Main_Dashboard">
+
+
+    <!--Heading-->
+
+    <LinearLayout
+        android:id="@+id/topnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:background="#5CE2B7">
+        <!--
+
+                <ImageButton
+                    android:id="@+id/menubutton"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="#5CE2B7"
+                    app:srcCompat="@drawable/ic_menu" />
+        -->
+        <TextView
+            android:id="@+id/apptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:text="Helthy Diet Food Plan"
+            android:textColor="#FAFCFC"
+            app:fontFamily="@font/dancing_script"
+            android:textDirection="firstStrong"
+            android:textSize="35dp" />
+        <!--
+                <ImageButton
+                    android:id="@+id/searchbutton"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="#5CE2B7"
+                    android:gravity="left"
+                    app:srcCompat="@drawable/ic_search" />
+        -->
+    </LinearLayout>
+
+    <!--Content title-->
+
+    <LinearLayout
+        android:id="@+id/optionlinetitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        >
+
+        <TextView
+            android:id="@+id/calctitle"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:text="Select a Calculator"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            app:fontFamily="@font/dancing_script"
+            android:textDirection="firstStrong"
+            android:textSize="40dp" />
+
+
+    </LinearLayout>
+
+
+    <!--Content 1-->
+
+    <LinearLayout
+        android:id="@+id/optionline1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        >
+
+        <Button
+            android:id="@+id/buttonLaunchBMICalculatorView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/gradient1"
+            android:text="BMI Calculator"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+
+    <!--Content 2-->
+
+    <LinearLayout
+        android:id="@+id/optionline2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        >
+
+        <Button
+            android:id="@+id/buttonLaunchCalorieCalculatorView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/gradient1"
+            android:text="Calorie Calculator"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+
+    <!--Content 3-->
+
+    <LinearLayout
+        android:id="@+id/optionline3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        >
+
+        <Button
+            android:id="@+id/buttonLaunchBodyFatCalculatorView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/gradient1"
+            android:text="Body Fat Calculator"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <!--Content 4-->
+
+    <LinearLayout
+        android:id="@+id/optionline4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        >
+
+        <Button
+            android:id="@+id/buttonLaunchWaistToHipView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/gradient1"
+            android:text="Waist to Hip Ratio"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <!--Footer-->
+
+    <LinearLayout
+        android:id="@+id/bottomnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:background="#5CE2B7">
+
+        <ImageButton
+            android:id="@+id/homebutton"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_home" />
+        <!--
+                <ImageButton
+                    android:id="@+id/settingsbutton"
+                    android:layout_width="41dp"
+                    android:layout_height="match_parent"
+                    android:background="#5CE2B7"
+                    android:layout_marginLeft="190dp"
+                    app:srcCompat="@drawable/ic_settings" />
+        -->
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+

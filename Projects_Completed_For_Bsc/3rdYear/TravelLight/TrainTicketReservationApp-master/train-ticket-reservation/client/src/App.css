@@ -1,0 +1,35 @@
+body {
+  font-family: Raleway;
+  color: #ffff;
+
+  background-image: linear-gradient(
+    to bottom,
+    #f60d40,
+    #fc3d34,
+    #ff5b28,
+    #ff741b,
+    #ff8b0c
+  );
+  margin: 10px 30px;
+}
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+.fade-enter {
+  opacity: 0.01;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
+.pointer {
+  cursor: pointer;
+}

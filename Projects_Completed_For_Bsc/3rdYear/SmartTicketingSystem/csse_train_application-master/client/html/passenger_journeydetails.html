@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Journey Details</title>
+    <script src="https://kit.fontawesome.com/0e0930589e.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <style>
+        #hiddeneManagerData,
+        #hiddeneLPData,
+        #hiddeneFPData,
+        #hiddeneIData {
+            display: none;
+        }
+    </style>
+
+    <!--JQery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        function loadtable() {
+
+            var userid = $('#userid').val();
+            var $idd = userid;
+            console.log(userid);
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "http://localhost:3000/journeyDetails/id/" + $idd,
+                success: function (data) {
+                    console.log(data.result);
+
+                    var idob = data.result._id;
+                    console.log("journeryDate " + data.result.journeryDate);
+                    console.log("fine status " + data.result.startingLocation);
+                    
+                    console.log("_id " + idob);
+
+                    var $table = $("#tbl");
+                    $table.append("<td>" + data.result.journeryDate + "</td>");
+                    $table.append("<td>" + data.result.startingLocation + "</td>");
+                    $table.append("<td>" + data.result.destinationLocation + "</td>");
+                    $table.append("<td>" + data.result.distance + "</td>");
+                    $table.append("<td>" + data.result.fare + "</td>");
+
+                }
+            });
+        }
+        //apply loan
+        
+
+    </script>
+
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+
+            <form class="form-inline my-2 my-lg-0">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../html/local_passenger.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </nav>
+    <!--container 1 for heading-->
+    <div class="jumbotron">
+        <h1 class="display-3" style="text-align: center">View Journey Details</h1>
+
+        <hr class="my-4">
+
+    </div>
+    <!--container 1-->
+    <div class="row">
+        <div class="col-sm-4">
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" id="userid" placeholder="Enter your user id">
+                <button type="button" class="btn btn-primary" id="register" onclick="loadtable()"><span></span>View Journey Details</button>
+            </form>
+        </div>
+        <div class="col-sm-2">
+            <p></p>
+        </div>
+    </div>
+    <div class="row">
+        <p></p>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <p></p>
+        </div>
+        <div class="col-sm-8">
+            <table class="table table-success">
+                <thead>
+                    <tr>
+                        <th scope="col">journeryDate</th>
+                        <th scope="col">startingLocation </th>
+                        <th scope="col">destinationLocation</th>
+                        <th scope="col">distance</th>
+                        <th scope="col">fare</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-secondary" id="tbl">
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-2">
+            <p></p>
+        </div>
+    </div>
+
+    
+
+
+</body>
+
+</html>

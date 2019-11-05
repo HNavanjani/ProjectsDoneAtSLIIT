@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <script src="https://kit.fontawesome.com/0e0930589e.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <style>
+        #hiddeneManagerData,#hiddeneLPData,#hiddeneFPData,#hiddeneIData {
+            display:none;
+        }
+
+    </style>
+
+    <!--JQery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function showDiv(select){
+            if(select.value==1){
+                document.getElementById('hiddeneManagerData').style.display = "block";
+                document.getElementById('hiddeneLPData').style.display = "none";
+                document.getElementById('hiddeneFPData').style.display = "none";
+                document.getElementById('hiddeneIData').style.display = "none";
+            }
+            if(select.value==2){
+                document.getElementById('hiddeneLPData').style.display = "block";
+                document.getElementById('hiddeneManagerData').style.display = "none";
+                document.getElementById('hiddeneFPData').style.display = "none";
+                document.getElementById('hiddeneIData').style.display = "none";
+            }
+            if(select.value==3){
+                document.getElementById('hiddeneFPData').style.display = "block";
+                document.getElementById('hiddeneManagerData').style.display = "none";
+                document.getElementById('hiddeneLPData').style.display = "none";
+                document.getElementById('hiddeneIData').style.display = "none";
+            }
+            if(select.value==4){
+                document.getElementById('hiddeneIData').style.display = "block";
+                document.getElementById('hiddeneManagerData').style.display = "none";
+                document.getElementById('hiddeneLPData').style.display = "none";
+                document.getElementById('hiddeneFPData').style.display = "none";
+            }
+        }
+
+        function registerUser() {
+
+           var username=$('#username').val();
+           var email=$('#email').val();
+           var password=$('#password').val();
+           var utype=$('#utype').val();
+
+           if(utype == 1){
+               //manager content
+               var fullNameManager=$('#fullNameManager').val();
+               var mage=$('#mage').val();
+
+               var objectToSend = {
+                   uname:username,
+                   email:email,
+                   password:password,
+                   utype:utype,
+                   managerName:fullNameManager,
+                   ManagerAge:mage};
+               $.post('http://localhost:3000/user/signup', objectToSend , function(response){
+                   console.log(response);
+                   alert(response.message);
+               });
+
+           }
+            if(utype == 2){
+                //Local Passenger content
+                var fullNameLP=$('#fullNameLP').val();
+                var phoneLP=$('#phoneLP').val();
+                var nic=$('#nic').val();
+                var cardTypeLP=$('#cardTypeLP').val();
+                var cardNumberLP=$('#cardNumberLP').val();
+                var lage=$('#lage').val();
+
+                var objectToSend = {
+                    uname:username,
+                    email:email,
+                    password:password,
+                    utype:utype,
+                    lPassengerName:fullNameLP,
+                    lPassengerAge:lage,
+                    lPassengerPhone:phoneLP,
+                    lPassengerNic:nic,
+                    cardtype:cardTypeLP,
+                    cardnumber:cardNumberLP};
+                $.post('http://localhost:3000/user/signup', objectToSend , function(response){
+                    console.log(response);
+                });
+            }
+            if(utype == 3){
+                //Foreign Passenger content
+                var fullNameFP=$('#fullNameFP').val();
+                var passNum=$('#passNum').val();
+                var cardTypeFP=$('#cardTypeFP').val();
+                var cardNumberFP=$('#cardNumberFP').val();
+                var fage=$('#fage').val();
+
+                var objectToSend = {
+                    uname:username,
+                    email:email,
+                    password:password,
+                    utype:utype,
+                    fPassengerName:fullNameFP,
+                    fPassengerAge:fage,
+                    fPassengerPassportNumber:passNum,
+                    cardtype:cardTypeFP,
+                    cardnumber:cardNumberFP};
+                $.post('http://localhost:3000/user/signup', objectToSend , function(response){
+                    console.log(response);
+                });
+            }
+            if(utype == 4){
+                //Foreign Passenger content
+                var fullNameInspector=$('#fullNameInspector').val();
+                var assRoute=$('#assRoute').val();
+                var phoneIns=$('#phoneIns').val();
+
+                var objectToSend = {
+                    uname:username,
+                    email:email,
+                    password:password,
+                    utype:utype,
+                    assignedroute:assRoute,
+                    name:fullNameInspector,
+                    phone:phoneIns};
+                $.post('http://localhost:3000/user/signup', objectToSend , function(response){
+                    console.log(response);
+
+                });
+            }
+       }
+    </script>
+
+</head>
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!--Sign Up form-->
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="jumbotron">
+                <h1 class="display-3">Sign Up</h1>
+                <form id="registerForm">
+                    <fieldset>
+                        <div class="form-group row">
+                            <label>Username</label>
+                            <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Enter Username">
+                        </div>
+                        <div class="form-group">
+                            <label>Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label>Select User Type</label>
+                            <select class="form-control" id="utype" onchange="showDiv(this)">
+                                <option value="0">Select User Type</option>
+                                <option value="1">Manager</option>
+                                <option value="2">Local Passenger</option>
+                                <option value="3">Foreign Passenger</option>
+                                <option value="4">Inspector</option>
+                            </select>
+                        </div><!--MAnager-->
+                        <div id="hiddeneManagerData">
+                        <div class="form-group" id="hiddeneManagerName">
+                            <label>Manager's Full Name</label>
+                            <input type="text" class="form-control" id="fullNameManager" aria-describedby="emailHelp" placeholder="Enter Full Name">
+                        </div>
+                            <div class="form-group">
+                                <label>Age</label>
+                                <input type="text" class="form-control" id="mage" aria-describedby="emailHelp" placeholder="Enter Age">
+                            </div>
+                        </div><!--Local passenger-->
+                        <div id="hiddeneLPData">
+                        <div class="form-group" id="hiddeneLPName">
+                            <label>Local Passenger's Full Name</label>
+                            <input type="text" class="form-control" id="fullNameLP" aria-describedby="emailHelp" placeholder="Enter Full Name">
+                        </div>
+                            <div class="form-group">
+                                <label>Age</label>
+                                <input type="text" class="form-control" id="lage" aria-describedby="emailHelp" placeholder="Enter Age">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="text" class="form-control" id="phoneLP" aria-describedby="emailHelp" placeholder="+94">
+                            </div>
+                            <div class="form-group">
+                                <label>NIC</label>
+                                <input type="text" class="form-control" id="nic" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label>Select Card Type</label>
+                                <select class="form-control" id="cardTypeLP">
+                                    <option value="credit">Credit Card</option>
+                                    <option value="debit">Debit Card</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Card Number</label>
+                                <input type="text" class="form-control" id="cardNumberLP" aria-describedby="emailHelp">
+                            </div>
+                        </div><!--Foreign Passenger-->
+                        <div id="hiddeneFPData">
+                        <div class="form-group" id="hiddeneFPName">
+                            <label>Foreign Passenger's Full Name</label>
+                            <input type="text" class="form-control" id="fullNameFP" aria-describedby="emailHelp" placeholder="Enter Full Name">
+                        </div>
+                            <div class="form-group">
+                                <label>Age</label>
+                                <input type="text" class="form-control" id="fage" aria-describedby="emailHelp" placeholder="Enter Age">
+                            </div>
+                            <div class="form-group">
+                                <label>Passport Number</label>
+                                <input type="text" class="form-control" id="passNum" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label>Select Card Type</label>
+                                <select class="form-control" id="cardTypeFP">
+                                    <option value="credit">Credit Card</option>
+                                    <option value="debit">Debit Card</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Card Number</label>
+                                <input type="text" class="form-control" id="cardNumberFP" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <div id="hiddeneIData"><!--Inspector-->
+                        <div class="form-group" id="hiddenIName">
+                            <label>Inspectors's Full Name</label>
+                            <input type="text" class="form-control" id="fullNameInspector" aria-describedby="emailHelp" placeholder="Enter Full Name">
+                        </div>
+                            <div class="form-group">
+                                <label>Assigned Route</label>
+                                <input type="text" class="form-control" id="assRoute" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="text" class="form-control" id="phoneIns" aria-describedby="emailHelp">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="register" onclick="registerUser()"><span></span>Register User</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</body>
+</html>

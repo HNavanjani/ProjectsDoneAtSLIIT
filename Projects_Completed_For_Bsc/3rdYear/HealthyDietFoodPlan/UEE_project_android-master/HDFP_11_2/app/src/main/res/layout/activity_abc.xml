@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCFDFD"
+    tools:context="com.example.hdfp_11_2.Main_Dashboard">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="#5CE2B7"
+        android:orientation="horizontal" >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/apptitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Helthy Diet Food Plan"
+                android:textColor="#FAFCFC"
+                android:layout_marginTop="20dp"
+                app:fontFamily="@font/dancing_script"
+                android:textDirection="firstStrong"
+                android:textSize="40dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#ecf0f1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/menu1"
+                android:layout_marginTop="30dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Diet Plan"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                app:srcCompat="@drawable/ic_home" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/menu2"
+                android:layout_marginTop="30dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="@drawable/vegetable_juice"
+                android:layout_gravity="center_horizontal"
+                android:text="Healthy Food and Drinks"
+                android:textSize="20dp"
+                android:textColor="#F5F2F2"
+                app:srcCompat="@drawable/ic_home" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="#ecf0f1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/menu3"
+                android:layout_marginTop="30dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="#FFFFFF"
+                android:layout_gravity="center_horizontal"
+                android:text="C\na\nl\nc\nu\nl\na\nt\no\nr\ns"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:drawableLeft="@drawable/allicon2"
+                android:textSize="11dp"
+                android:textColor="#000000"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/menu4"
+                android:layout_marginTop="30dp"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:background="#FFFFFF"
+                android:layout_gravity="center_horizontal"
+                android:text="Weight Loose"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                app:srcCompat="@drawable/ic_home" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="#5CE2B7"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+
+            <ImageButton
+                android:id="@+id/homebutton"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:background="#5CE2B7"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_home" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

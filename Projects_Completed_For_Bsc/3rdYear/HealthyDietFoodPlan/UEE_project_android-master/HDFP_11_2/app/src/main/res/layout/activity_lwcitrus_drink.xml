@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCFDFD"
+    tools:context=".FoodDrinks">
+
+    <!--Heading-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#5CE2B7">
+
+        <TextView
+            android:layout_width="305dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="22dp"
+            android:text="Helthy Diet Food Plan"
+            android:textAlignment="center"
+            android:textColor="#FAFCFC"
+            android:textDirection="firstStrong"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+    <!--Content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="424dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:background="#E09780"
+            android:fontFamily="cursive"
+            android:text="               Citrus Drink"
+            android:textColor="#FBFDFB"
+            android:textSize="30dp" />
+
+        <ViewFlipper
+            android:id="@+id/citrus_drink_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="155dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#5CE2B7">
+                <!--Let's make it-->
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#E09780"
+                    android:fontFamily="cursive"
+                    android:text="Let's Make It"
+                    android:textColor="#F6F7F7"
+                    android:textSize="40dp" />
+
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="1/2 cup  grapefruit"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="1/2 cup pomegranate"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="1 teaspoon organic honey"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Pinch of salt"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+                <!--How do we make it-->
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#E09780"
+                    android:fontFamily="cursive"
+                    android:text="How Do we make it"
+                    android:textColor="#F3F7F6"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Blend both grapefruit and pomegranate"
+                    android:textColor="#CA4639"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Shake it and pour it into a glass"
+                    android:textColor="#CA4639"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Add honey and pinch of salt"
+                    android:textColor="#CA4639"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FCFDFC"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Stir well before drinking"
+                    android:textColor="#CA4639"
+                    android:textSize="25dp" />
+                <!--Benefits-->
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#E09780"
+                    android:fontFamily="cursive"
+                    android:text="Benefits........."
+                    android:textColor="#FBFDFB"
+                    android:textSize="40dp" />
+
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#E092AD"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="General Benefit"
+                    android:textColor="#12312E"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#E2BCC8"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Belly Shrinking"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#E2BCC8"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Lose your excess weight"
+                    android:textColor="#08443E"
+                    android:textSize="25dp" />
+                <!--Grapefruit-->
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FBFDFB"
+                    android:fontFamily="cursive"
+                    android:text="Grapefruit Fruit"
+                    android:textColor="#EC4612"
+                    android:textSize="30dp" />
+                <ImageView
+                    android:layout_width="339dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/grapefruit"/>
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#EC4612"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Improve insulin sensitivity and post-glucose insulin levels"
+                    android:textColor="#F1F3F3"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FBFDFB"
+                    android:fontFamily="cursive"
+                    android:text="Pomegranate Fruit"
+                    android:textColor="#E00934"
+                    android:textSize="30dp" />
+                <ImageView
+                    android:layout_width="339dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/pomegranate"/>
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#E00934"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Reduce inflammation"
+                    android:textColor="#F3F7F6"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#E00934"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Regulate blood preasure"
+                    android:textColor="#FAFCFC"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#E00934"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Lower bad cholesterol hyperglycemia"
+                    android:textColor="#F2F7F6"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FBFDFB"
+                    android:fontFamily="cursive"
+                    android:text="Organic Honey"
+                    android:textColor="#FFC107"
+                    android:textSize="30dp" />
+                <ImageView
+                    android:layout_width="339dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/honey"/>
+
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFC107"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Prevent from gut problems"
+                    android:textColor="#FAFCFC"
+                    android:textSize="25dp" />
+                <TextView
+                    android:layout_width="339dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFC107"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Improve cardiovascular health"
+                    android:textColor="#F1F3F3"
+                    android:textSize="25dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

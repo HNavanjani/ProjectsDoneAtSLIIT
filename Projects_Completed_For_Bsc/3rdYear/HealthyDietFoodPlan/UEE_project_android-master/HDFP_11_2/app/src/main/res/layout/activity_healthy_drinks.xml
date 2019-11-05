@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCFDFD"
+    android:weightSum="4"
+    tools:context=".HealthyDrinks">
+
+    <!--Heading-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="#5CE2B7">
+
+        <TextView
+            android:layout_width="305dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="22dp"
+            android:text="Helthy Diet Food Plan"
+            android:textAlignment="center"
+            android:textColor="#FAFCFC"
+            android:textDirection="firstStrong"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <!--content-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:layout_marginLeft="10dp"
+        android:background="#57A6E4">
+
+        <TextView
+            android:layout_width="339dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="cursive"
+            android:text="Healthy Drinks"
+            android:textColor="#FBFDFB"
+            android:textSize="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4">
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/drinks_image_flipper"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/questions_text_view"
+            android:layout_width="339dp"
+            android:layout_height="67dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="1dp"
+            android:background="#5CE2B7"
+            android:textColor="#F2F2F7"
+            android:fontFamily="sans-serif-black"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/answer1"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="1dp"
+                android:background="#ACACB3"
+                android:gravity="center"
+                android:text="Button"
+                android:textColor="#121213" />
+            <Button
+                android:id="@+id/answer2"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#ACACB3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="1dp"
+                android:textColor="#121213"
+                android:text="Button" />
+            <Button
+                android:id="@+id/answer3"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#ACACB3"
+                android:layout_marginLeft="10dp"
+                android:textColor="#121213"
+                android:text="Button" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+    </LinearLayout>
+
+    <!--Footer-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="#5CE2B7">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5CE2B7"
+            android:src="@drawable/home" />
+    </LinearLayout>
+
+</LinearLayout>

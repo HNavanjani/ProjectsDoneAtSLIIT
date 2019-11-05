@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <script src="https://kit.fontawesome.com/0e0930589e.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <style>
+        #hiddeneManagerData,
+        #hiddeneLPData,
+        #hiddeneFPData,
+        #hiddeneIData {
+            display: none;
+        }
+    </style>
+
+    <!--JQery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    function getdata() {
+            var userid = $('#userid').val();
+            var tamount = $('#tamount').val();
+
+
+            console.log(userid);
+            var $idd = userid;
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "http://localhost:3000/getlocalpassengers/id/" + $idd,
+                success: function (data) {
+                    console.log(data.result);
+                    var subsamount = (data.result.fineamount) + (data.result.loanamount);
+                    
+                    var idob = data.result._id;
+                    console.log("fine amount " + data.result.fineamount);
+                    console.log("fine status " + data.result.finestatus);
+                    console.log("loan amount " + data.result.loanamount);
+                    console.log("loan status " + data.result.loanstatus);
+                    console.log("_id " + idob);
+                    
+
+                        
+
+                        //update amount
+                        if(data.result.initialamountstatus==1){
+                            alert("Your initial payment has already done");
+                        }
+                        else{
+                        $.put = function (url, data, callback, type) {
+
+                            if ($.isFunction(data)) {
+                                type = type || callback,
+                                    callback = data,
+                                    data = {}
+                            }
+
+                            return $.ajax({
+                                url: url,
+                                type: 'PUT',
+                                success: callback,
+                                data: data,
+                                contentType: type
+                            });
+                        }
+                        var $idd = idob;
+
+
+                        $.put('http://localhost:3000/applyloan/id/' + $idd, { amount: 1000,initialamountstatus:1 }, function (result) {
+                            console.log(result);
+                        })
+                        alert("Your account has been rechrged by 1000");
+
+                    }
+                }
+            });
+
+        }
+    </script>
+
+
+</head>
+
+<body >
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarColor01">
+    
+                <form class="form-inline my-2 my-lg-0">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../html/local_passenger.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </nav>
+ <!--container 1 for heading-->
+    <div class="jumbotron">
+            <h1 class="display-3" style="text-align: center">Do Initial Payment</h1>
+            
+            <hr class="my-4">
+            
+          </div>
+    <!--container 1 for form-->
+    <!--container 2 for form-->
+    <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6">
+    
+                <form>
+                    <fieldset>
+    
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">User id</label>
+                            <input type="email" class="form-control" id="userid" aria-describedby="emailHelp"
+                                placeholder="Enter User Id">
+    
+                        </div>
+    
+                        <div class="form-group">
+                            <label>Select Card Type</label>
+                            <select class="form-control" id="utype" onchange="showDiv(this)">
+                                <option value="0">Credit Card</option>
+                                <option value="1">Debit Card</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Card Number</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter card Number">
+    
+                        </div>
+    
+                        
+                        <button type="button" class="btn btn-primary" id="register"
+                            onclick="getdata()"><span></span>Register User</button>
+    
+                    </fieldset>
+                </form>
+    
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+
+       
+</body>
+
+</html>

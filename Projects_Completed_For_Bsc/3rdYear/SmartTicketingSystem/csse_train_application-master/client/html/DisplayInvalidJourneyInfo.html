@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ticketing System</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+
+    <script src="../jQuery/jquery.js"></script>
+    <script src="../javaScripts/ManageInspectors.js"></script>
+    <script src="../javaScripts/ManageTokenValidity.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <a class="navbar-brand" href="./InspectorFunctions.html">Dashboard</a>
+        <a class="navbar-brand" href="./InspectorFunctions.html">Log Out</a>
+
+        </div>
+      </nav>
+
+    <!--Heading-->
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Invalid Journey Details</h1>
+        <p class="lead">
+            - Display rules violated passenger count
+        </p>
+      </div>
+    </div>
+
+    <!--Load invalid journey details-->
+  <h1>
+    <span class="badge badge-secondary">Invalid Journey Details</span></h1>
+    <div class="list-group">
+        <ul id="invalidjourney"></ul>
+        <template id="invalidjourney-template">
+          <li class="list-group-item list-group-item" data-id="{{ _id }}">
+            <p>
+              <strong>User ID</strong>
+              <span class="noedit userID">{{ userID }}</span>
+              <input class="edit userID" />
+            </p>
+            <p>
+              <strong>Journey Date</strong>
+              <span class="noedit journeryDate">{{ journeryDate }}</span>
+              <input class="edit journeryDate" />
+            </p>
+    
+            <p>
+              <strong>Starting Location</strong>
+              <span class="noedit startingLocation">{{ startingLocation }}</span>
+              <input class="edit startingLocation" />
+            </p>
+    
+            <p>
+              <strong>Destination Location</strong>
+              <span class="noedit destinationLocation">{{ destinationLocation }}</span>
+              <input class="edit destinationLocation" />
+            </p>
+    
+            <p>
+              <strong>Destination</strong>
+              <span class="noedit distance">{{ distance }}</span>
+              <input class="edit distance" />
+            </p>
+
+            <p>
+              <strong>Fare</strong>
+              <span class="noedit fare">{{ fare }}</span>
+              <input id = "orginalfare"class="edit fare" />
+            </p>
+
+            <p>
+              <strong>Route Name</strong>
+              <span class="noedit routeName">{{ routeName }}</span>
+              <input class="edit routeName" />
+            </p>
+
+            <p>
+              <strong>Day</strong>
+              <span class="noedit day">{{ day }}</span>
+              <input class="edit day" />
+            </p>
+
+            <p>
+              <strong>Hour</strong>
+              <span class="noedit hour">{{ hour }}</span>
+              <input class="edit hour" />
+            </p>
+            <p>
+              <strong class="edit">Fine</strong>
+              <span id = "sfareamount"class="edit fine">{{ fine }}</span>
+              <input id = "ifareamount"class="edit fine" />
+            </p>
+
+            <p>
+              <strong class="edit">Email</strong>
+              <span class="edit emaila">{{ emaila }}</span>
+              <input class="edit emaila" />
+            </p>
+    
+            <button data-id="{{ _id }}" class="remove btn btn-danger">
+              X
+            </button>
+           
+            <button class="addfine noedit btn btn-warning">Add Fine</button>
+            <button class="saveEdit edit btn btn-success">SAVE & SEND EMAIL</button>
+            <button class="cancelEdit edit btn btn-secondary">CANCEL</button>
+           
+          
+          </li>
+        </template>
+    
+    </div>
+
+
+  </body>
+</html>
