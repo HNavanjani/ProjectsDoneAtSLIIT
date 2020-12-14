@@ -1,0 +1,148 @@
+[
+  {
+    "1":
+    {
+      "1": "What else could Jack do to pre-warn the traffic?",
+      "2": "How could Jack stop the bleeding from the rider's leg wound?",
+      "3": "How does Jack identify the other casualty is suffering from shock?"
+    },
+    "2":
+    {
+      "1": "Jack can pre-warn the traffic by -----------------",
+      "2": "Jack is giving information to --------------------",
+      "3": "Jack calls ------------------ first and then deals with the rider"
+    },
+    "3":
+    {
+      "1": "How much distance that we need to place the warning triangle from the spot?",
+      "2": "What is the first action that done by the firstaider?",
+      "3": "Just assume if you plays the role of Jack then what should your firststep for that unconscious non-breathing adult?"
+    },
+    "4":
+    {
+      "1": "In case you witness an accident and you take the victim to a hospital, do you need to file a police complaint?",
+      "2": "If a person has met with an accident, is it okay to check their mobile phone or wallet for contact number of relatives?",
+      "3": "If your car is damaged in an accident, do you need to inform the insurance agency on the spot?"
+    }
+  },
+
+  {
+    "1": {
+      "1":
+      {
+        "a": "By placing his car in the middle of the road",
+        "b": "By displaying a hazard warning triangle 45 meters behind his vehicle",
+        "c": "He could wave the traffic down to pre-warn them",
+        "d": "He could use his dipped head lights"
+      },
+      "2":
+      {
+        "a": "By keeping the leg low",
+        "b": "By sitting the rider upright",
+        "c": "By raising his leg above heart level",
+        "d": "By bending the leg at the knee"
+      },
+      "3":
+      {
+        "a": "The person will have a slow pulse",
+        "b": "The person will have a rapid pulse",
+        "c": "The heart rate will be normal",
+        "d": "The heart rate will be un normal"
+      }
+    },
+    "2": {
+      "1":
+      {
+        "a": "By displaying a hazard warning triangle 45 meters behind his vehicle",
+        "b": "He could use his dipped head lights",
+        "c": "By placing his car in the middle of the road",
+        "d": "He could wave the traffic down to pre-warn them"
+      },
+      "2":
+      {
+        "a": "An ambuance driver",
+        "b": "A police officer",
+        "c": "Family member of the patient",
+        "d": "None of the above"
+      },
+      "3":
+      {
+        "a": "Police station",
+        "b": "Hospital",
+        "c": "Emergency service",
+        "d": "None of the above"
+      }
+    },
+    "3": {
+      "1": {
+        "a": "120m",
+        "b": "100m",
+        "c": "150m",
+        "d": "Above 200m"
+      },
+      "2": {
+        "a": "Turn on the emergency lights of the car to warn the other road users",
+        "b": "To stand in the middle of the roadway to warn the other road users",
+        "c": "Park the car, turn on the emergency lights of the car and call the Ambulance",
+        "d": "Park the car, turn on the emergency lights of the car and call the Ambulance"
+      },
+      "3": {
+        "a": "Start CPR with 30 chest compressions.",
+        "b": "Give five initial rescue breaths",
+        "c": "Call 110 and requesting for an ambulance",
+        "d": "Give two initial rescue breaths"
+      }
+    },
+    "4":
+    {
+      "1":
+      {
+        "a": "Yes, It is compulsory",
+        "b": "No, It is not compulsory",
+        "c": "Yes, But not compulsory",
+        "d": "It is depend on the accident"
+      },
+      "2":
+      {
+        "a": "No, You cannot",
+        "b": "Yes, You can",
+        "c": "No, It is the responsibility of police officer",
+        "d": "None of the above"
+      },
+      "3":
+      {
+        "a": "No, It is not needed",
+        "b": "Yes, You need to inform",
+        "c": "It is based on the accident",
+        "d": "None of the above"
+      }
+    }
+  },
+
+  {
+    "1":
+    {
+      "1": "b",
+      "2": "c",
+      "3": "b"
+    },
+    "2":
+    {
+      "1": "a",
+      "2": "b",
+      "3": "b"
+    },
+    "3":
+    {
+      "1": "b",
+      "2": "c",
+      "3": "b"
+    },
+    "4":
+    {
+      "1": "b",
+      "2": "b",
+      "3": "a"
+    }
+  }
+]

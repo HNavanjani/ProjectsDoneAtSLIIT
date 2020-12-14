@@ -1,0 +1,208 @@
+[
+  {
+    "1":
+    {
+      "1": "How should you open the airway of an unconscious casualty?",
+      "2": "How long would you check to see if an unconscious casualty is breathing normally?",
+      "3": "Based on the video you watched, you are a lone first aider in that situation. What should your firststep for that unconscious non-breathing adult?",
+      "4": "Which is the correct ratio of chest compressions to rescue breaths of an adult casualty use in CPR?",
+      "5": "What steps would you take to control bleeding from a nose of a person who has met with an accident?"
+    },
+    "2":
+    {
+      "1": "In case you witness an accident and you take the victim to a hospital, do you need to file a police complaint?",
+      "2": "If a person has met with an accident, is it okay to check their mobile phone or wallet for contact number of relatives?",
+      "3": "If your car is damaged in an accident, do you need to inform the insurance agency on the spot?",
+      "4": "Based on the video, assume that one of the motorists sustained a one inch long cut on his right arm with little-to-no-blood.Is it compulsory for both drivers to notify Depatment of Motor Vehicles about the accident?",
+      "5": "Assume if you are involved in an accident and it was caused by another driver. You have the right not to notify your own insurance company about the collision, so long as you are not injured and the other driver agrees in writing to pay for any damage to your vehicle."
+    },
+    "3":
+    {
+      "1": "CPR means ----------------------------",
+      "2": "Second step of CPR procedure is ------------------------",
+      "3": "Start the CPR after evaluate breathing of a casualty for --------------",
+      "4": "CPR contains -------- basic steps",
+      "5": "When you start to give chest compression for an unconsious casualty you need to place the heel of your hand on the --------------- of the chest"
+    },
+    "4":
+    {
+      "1": "What is the police emergency contact number?",
+      "2": "How do you contact an ambulance service in an emergeny situation?",
+      "3": "Based on the video let's assume you are the one who first arrived at the scene of the accident. What should be your first action?",
+      "4": "Based on the video let's assume you are the one who first arrived at the scene of the accident.Once you have called the emergency services, what are your next actions that help you to ensure the safety of the involved in an accident and the other road users?",
+      "5": "Based on the video let's assume you are the one who first arrived at the scene of the accident.Once you warn other road users what is the next thing you should do?"
+    }
+  },
+
+  {
+    "1": {
+      "1":
+      {
+        "a": "Head tilt and chin lift",
+        "b": "Jaw thrust",
+        "c": "Head tilt and jaw thrust",
+        "d": "Lift the chin"
+      },
+      "2":
+      {
+        "a": "No more than 10 seconds",
+        "b": "Approximately 10 seconds",
+        "c": "Exactly 10 seconds",
+        "d": "Atleast 10 seconds"
+      },
+      "3":
+      {
+        "a": "Start CPR with 30 chest compressions.",
+        "b": "Give five initial rescue breaths",
+        "c": "Call and requesting for an ambulance",
+        "d": "Give two initial rescue breaths"
+      },
+      "4":
+      {
+        "a": "2 compressions : 30 rescue breaths",
+        "b": "5 compressions : 1 rescue breaths",
+        "c": "15 compressions : 2 rescue breaths",
+        "d": "30 compressions : 2 rescue breaths"
+      },
+      "5":
+      {
+        "a": "Sit casualty down, lean forward and pinch soft part of nose",
+        "b": "Sit casualty down, lean backward and pinch soft part of nose",
+        "c": "Lie casualty down and pinch soft part of nose",
+        "d": "Sit casualty down and pinch top of nose"
+      }
+    },
+    "2":{
+      "1":
+      {
+        "a": "Yes, It is compulsory",
+        "b": "No, It is not compulsory",
+        "c": "Yes, But not compulsory",
+        "d": "It is depend on the accident"
+      },
+      "2":
+      {
+        "a": "No, You cannot",
+        "b": "Yes, You can",
+        "c": "No, It is the responsibility of police officer",
+        "d": "None of the above"
+      },
+      "3":
+      {
+        "a": "No, It is not needed",
+        "b": "Yes, You need to inform",
+        "c": "It is based on the accident",
+        "d": "None of the above"
+      },
+      "4":
+      {
+        "a": "No",
+        "b": "Yes",
+        "c": "It is based on the accident",
+        "d": "None of the above"
+      },
+      "5":
+      {
+        "a": "False",
+        "b": "True",
+        "c": "It is based on the accident",
+        "d": "None of the above"
+      }
+    },
+    "3": {
+      "1": {
+        "a": "Cardiopulmonary resuscitation",
+        "b": "Cardiopulmonary rescue",
+        "c": "Can say in both way as mentioned above",
+        "d": "None of the above"
+      },
+      "2": {
+        "a": "Recognize the emergency",
+        "b": "Check for breathing",
+        "c": "Activate Emergency service",
+        "d": "None of the above"
+      },
+      "3": {
+        "a": "10 to 15 seconds",
+        "b": "5 to 10 seconds",
+        "c": "20 seconds",
+        "d": "None of the above"
+      },
+      "4": {
+        "a": "6",
+        "b": "4",
+        "c": "7"
+      },
+      "5": {
+        "a": "Right",
+        "b": "Center",
+        "c": "Left"
+      }
+    },
+    "4": {
+      "1": {
+        "a": "119",
+        "b": "120",
+        "c": "110",
+        "d": "None of the above"
+      },
+      "2": {
+        "a": "Call using 130",
+        "b": "Call using 110",
+        "c": "Call using 119",
+        "d": "None of the above"
+      },
+      "3": {
+        "a": "To turn on the emergency lights of your car to warn the other road users",
+        "b": "To stand in the middle of the roadway to warn the other road users",
+        "c": "To park your car, turn on the emergency lights of your car and call the Ambulance",
+        "d": "None of the above"
+      },
+      "4": {
+        "a": "To place a reflective warning triangle",
+        "b": "Submit beep",
+        "c": "To stand in the middle of the driveway and waving your hands."
+      },
+      "5": {
+        "a": "To check whether there are injured people who are unconscious.",
+        "b": "To check whether there are injured people with severe blood loss.",
+        "c": "To check whether there is a likelihood of further incidents at the area of the accident"
+      }
+    }
+  },
+
+  {
+    "1":
+    {
+      "1": "a",
+      "2": "a",
+      "3": "c",
+      "4": "d",
+      "5": "a"
+    },
+    "2":
+    {
+      "1": "b",
+      "2": "b",
+      "3": "a",
+      "4": "b",
+      "5": "a"
+    },
+    "3":
+    {
+      "1": "a",
+      "2": "c",
+      "3": "b",
+      "4": "c",
+      "5": "b"
+    },
+    "4":
+    {
+      "1": "a",
+      "2": "b",
+      "3": "c",
+      "4": "a",
+      "5": "c"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "road-accident-response-game",
+  "private_key_id": "a5ad6a31908e26912314ecc62f175f154916fd4d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCn/EdoldfhmrOI\ncIo4yT/57+kGMAsdCDFmsX9t5vBdqkWiv6TbdMIw/m6qbIEtNGnTlQiXNXyWLyQA\nTknBr13mo/UX7IvcvYwdtyICNmBgWmkMATXAHLhfH4n/C9X2ebVDe0n+c38M8krA\n26PtSSaLyMLRGX9Q5ZZCOg9imavMth1As7oQlHJWJkXTRc53vid3Pvc15Uatzk94\ncUlK3lxsz1eAlftIDHitJwaVi6/StEobsdHe3iWlf2FiXvkk0OgIQLtG8GOpujFG\nRKyfpPSoOcSUOebDzu/c9MBQpe7DGX6UfbsSwpSgSe1IADJuri5QyLb1wHlD7Frl\nzdPrdfrBAgMBAAECggEACLnPysS300n6J+zynRsFFfpKkC34MdCeYk93h1Gu7Cqf\nVeIfEeA5gxqATJ14w0yc76bm7JXUbCe0NsjaR3OQzN146n540GVPLS75VwSUkoS3\nvq4kaN+FCznj7OnkOhqd2gzCLfO5ZoaCcAyosfdyB2JNDlgE90KJwNRrvqstU6OP\ngxQFpONn0/YjE/xUmIk4ibkh1Cn+Xdmsz0Dy0YhQz3TIz7hw/FTHin1bIBoq+6h7\neFvKJ6stCNBbeeaQUF9nzONqmtSTV65guhrYnsDVIhNpvotbgvMS//MFYt2Obnwx\nUDXgqzBC+WSv4PqtrrhU4MDST/XKNIX5SuV4mQnY8QKBgQDbRXJnTpLonyJWYIOw\nR0uV1Lquk7onbn6tkkH8m7UzRVM6YxIqLROM1HCKLYY3x/p6LrdUrFZt70LpyTVe\nqWxRiH1Sp6aj+OrAp2WFvoy1ZVWWU50At/bSkH5Qxd25H94FyfPVXOAGe3aaJXuP\nTBE/jx0PNIyTO3hdfQpFUMZ+iQKBgQDEH6ZDQSppaFvSj+yLIGzF3ZLZjzZrJ56x\nfV+95kDqwVseTKCoy+EmGzwu4M7sciqL3N25V4D0ARsmiC7ev+vcIY8R5d5eazb/\nVTn6CKJ+Bc567A++aVleU4LWWWYR4Hk1HkwXho0/Tb2z+ubzAV+eTgkMhT3jQ8Dz\nxksC/pfMeQKBgBCTLVS10dEXxma1IP9ARGxtCjeMHzQ/2/+O4MIRmx7nDKWLO6JI\nigPJQ0COtGifC0YVJfKWnGnu/iXh+dDQCcoYATEwTx5yAHzTqo7zmntTz6ZvZ5zY\nSyYbmhDNBDesOwJBA9eLD7wttQdt8eshGuStEstFc6LlifG3NAGNW5PRAoGAUMTw\nBhaaTtrJpgfb1Ng/s6UyyyJtuOeSNWp6uYxQA94plmrcZ2e/i5//wxaWYU4LM5p8\nPc5JrzOdaNsA4n+LtRalAyv1zlC9T55byBsyQFBH3tvFCBf+1Bf0dC5RGN+nSzb1\nA2NIXF+51ptn7YANTva4R03AVQ4cMsjhL5SGE5ECgYAPFUMbJJcVZNMOMkeR8E8n\nJowpfwEdMTyMpWDi7sZb2SOudDFwh8EqigwiEwKNmPLee88LPu7Qy31i6fsm52RL\nmx7S7T/gXhJA49kxMj8xO5sOCchGP/f8hGIeu4VzjxJbBh/370y6YUKOH1oEnFNV\nOeMdHTBT2EkOlNxb+xx6Bg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-zissq@road-accident-response-game.iam.gserviceaccount.com",
+  "client_id": "106848568967580221113",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-zissq%40road-accident-response-game.iam.gserviceaccount.com"
+}

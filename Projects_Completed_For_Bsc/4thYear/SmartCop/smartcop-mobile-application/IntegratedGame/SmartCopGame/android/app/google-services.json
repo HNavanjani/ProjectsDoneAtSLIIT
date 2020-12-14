@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "653180157666",
+    "firebase_url": "https://road-accident-response-game.firebaseio.com",
+    "project_id": "road-accident-response-game",
+    "storage_bucket": "road-accident-response-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653180157666:android:ba053208056694d7cd68bb",
+        "android_client_info": {
+          "package_name": "com.example.researchresponsegame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "653180157666-gpnrufttqralg4clpo1h5s2bnpn9gi76.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwwg2_GDwgHEKDGQd1Byys43hOxSE7aqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "653180157666-gpnrufttqralg4clpo1h5s2bnpn9gi76.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

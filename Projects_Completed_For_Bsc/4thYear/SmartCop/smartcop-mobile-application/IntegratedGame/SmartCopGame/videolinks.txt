@@ -1,0 +1,24 @@
+video based quiz intro clip(videobased.mp4) - https://drive.google.com/file/d/1EnvpiHmy3AtovORqAV3al20KsWD71I0y/view?usp=sharing
+
+video quiz clip 1(video1.mp4)- https://drive.google.com/file/d/1JV091E0aLHIYf36vzZrm0Vk5s_YaaU33/view?usp=sharing
+
+video quiz clip 2(video0.mp4)- https://drive.google.com/file/d/1MLg6ALI2BtrQph6xHRKUczjiGi3Cd0ey/view?usp=sharing
+
+video quiz clip 3(video2.mp4)- https://drive.google.com/file/d/1VQe8-_YL7voUFKCKQOgNZTZ3VEsK1DxV/view?usp=sharing
+
+audio based quiz intro clip(audiobased.mp4) - https://drive.google.com/file/d/1N6fgb9t1o5_GQ5wEd1oX79hkWu-GzXBy/view?usp=sharing
+
+article based quiz intro clip(articlebased.mp4) - https://drive.google.com/file/d/1jpBDlSxDBTNxwb7PON0UZDzZMm_0joCG/view?usp=sharing
+
+audio clip 1(audioA.mp3)- https://drive.google.com/file/d/1OSea9ZMgFVF29A7kgG795UTiyCBw0hrp/view?usp=sharing
+
+audio clip 2(smartcopTune.mp3)- https://drive.google.com/file/d/1dnbvwRMgI7wNDJunPaKKFQFzgCSCCQGI/view?usp=sharing
+
+audio clip 3(startup.mp3)- https://drive.google.com/file/d/1_tpBmy7-XdRLXNd3NmEWfSNPyAJs0A8t/view?usp=sharing
+
+Cannot add video files and audio files directly to the gitlab because of space issuce. So, I added those videos and audios on google drive and now you can download the
+needed videos and audios for quiz game using above links.
+
+Then create a folder called "video" and add downloaded videos inside the "video"  folder. 
+
+create a folder called "assets" and add downloaded audios inside the "assets" folder
