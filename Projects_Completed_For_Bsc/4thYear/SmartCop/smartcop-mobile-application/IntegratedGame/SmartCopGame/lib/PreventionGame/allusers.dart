@@ -18,8 +18,8 @@ class AllusersPageState extends State<AllusersPage> {
 
   @override
   void initState() {
-    _controller = VideoPlayerController.network(
-        "https://drive.google.com/file/d/1RJ4E5AwvSvJSOpe8lUIuLbBnCuHL0guD/view?usp=sharing");
+    _controller = VideoPlayerController.asset(
+        "assets/videos/tutorial.mp4");
     //_controller = VideoPlayerController.asset("videos/sample_video.mp4");
     _initializeVideoPlayerFuture = _controller.initialize();
     _controller.setLooping(true);

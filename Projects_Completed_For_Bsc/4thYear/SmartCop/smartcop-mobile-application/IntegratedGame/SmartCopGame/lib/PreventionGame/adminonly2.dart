@@ -71,6 +71,17 @@ Future<Post> createPost(String url, {Map body}) async {
   });
 }
 
+Future addDefaultQuestions() async {
+  print("/////////////Adding Default Questions////////////////////////");
+  await databaseReference.collection("questions").add({
+    'question': newlyAddedWord + " => " + hintOfNewlyAddedWord,
+  }).then((documentReference) {
+    print("INSERTED RECORD IS: " + documentReference.documentID);
+  }).catchError((e) {
+    print(e);
+  });
+}
+
 Future addDifficultQuestions() async {
   print("/////////////Adding Difficult Questions////////////////////////");
   await databaseReference.collection("difficultQuestions").add({
@@ -212,18 +223,18 @@ class AdminPageState extends State<AdminPage2> {
                   SizedBox(
                     height: 20,
                   ),
-                  _RadioButton(
-                    title: "Default Level Question",
-                    value: 0,
-                    onChanged: (newValue) =>
-                        setState(() => _groupValue01 = newValue),
-                  ),
-                  _RadioButton(
-                    title: "Difficult/Easy Level Question",
-                    value: 1,
-                    onChanged: (newValue) =>
-                        setState(() => _groupValue01 = newValue),
-                  ),
+//                  _RadioButton(
+//                    title: "Default Level Question",
+//                    value: 0,
+//                    onChanged: (newValue) =>
+//                        setState(() => _groupValue01 = newValue),
+//                  ),
+//                  _RadioButton(
+//                    title: "Difficult/Easy Level Question",
+//                    value: 1,
+//                    onChanged: (newValue) =>
+//                        setState(() => _groupValue01 = newValue),
+//                  ),
                   new TextField(
                     controller: wordControler,
                     decoration: InputDecoration(
@@ -240,15 +251,60 @@ class AdminPageState extends State<AdminPage2> {
                   SizedBox(
                     height: 50,
                   ),
+
                   new RaisedButton(
                     child: const Text(
-                      "Enter More Details >>",
+                      "Add Default Level Question >>",
                       style: TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.bold,
                           color: Colors.white),
                     ),
-                    color: Colors.blue,
+                    color: Colors.orange,
+                    onPressed: () {
+                      addDefaultQuestions();
+
+                      showMessage(BuildContext context) {
+                        Widget okButton = FlatButton(
+                          child: Text("OK"),
+                          onPressed: () {
+                            Navigator.pop(context);
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => Home()));
+                          },
+                        );
+
+                        AlertDialog alert = AlertDialog(
+                          title: Text("SmartCop"),
+                          content: Text("New Word Successfully Added ...."),
+                          actions: [
+                            okButton,
+                          ],
+                        );
+
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return alert;
+                          },
+                        );
+                      }
+
+                      showMessage(context);
+
+
+                    },
+                  ),
+
+                  new RaisedButton(
+                    child: const Text(
+                      "Add Difficult/Easy Level Question >>",
+                      style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                    color: Colors.green,
                     onPressed: () {
                       Navigator.of(context).push(new MaterialPageRoute(
                           builder: (BuildContext context) => new AdminPage()));

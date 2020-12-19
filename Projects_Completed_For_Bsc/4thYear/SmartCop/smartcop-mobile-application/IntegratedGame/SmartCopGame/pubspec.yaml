@@ -96,6 +96,7 @@ flutter:
     - assets/images/hangman_lose.png
 
     - assets/images/hangman_win.png
+    - assets/videos/tutorial.mp4
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

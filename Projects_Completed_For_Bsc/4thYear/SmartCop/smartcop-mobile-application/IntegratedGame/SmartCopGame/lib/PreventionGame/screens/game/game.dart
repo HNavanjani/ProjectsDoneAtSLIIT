@@ -386,6 +386,10 @@ class _GameState extends State<Game> {
     );
 
     if (gameController.alreadyWon()) {
+      //*new additions
+      isGameOver = true;
+      addProgressDetails();
+      //*new additions
       _timer.cancel();
       addPlayerDetails();
       attemptCounter++;
@@ -551,6 +555,10 @@ class _GameState extends State<Game> {
                             child: Text("Try Again"),
                             onPressed: () {
                               //Launch game screen
+
+                              generateNextQuestion();
+                              displayHintF();
+                              
                               Navigator.pushAndRemoveUntil(
                                   context,
                                   MaterialPageRoute(
