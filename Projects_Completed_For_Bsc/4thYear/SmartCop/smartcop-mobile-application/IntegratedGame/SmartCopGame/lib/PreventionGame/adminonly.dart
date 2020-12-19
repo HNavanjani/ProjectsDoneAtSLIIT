@@ -293,8 +293,8 @@ class AdminPageState extends State<AdminPage> {
               onPressed: () async {
                 try {
                   var url = CREATE_POST_URL;
-                  newlyAddedWord = wordControler.text;
-                  hintOfNewlyAddedWord = hintControler.text;
+                  //newlyAddedWord = wordControler.text;
+                  //hintOfNewlyAddedWord = hintControler.text;
                   //encode Map to JSON
                   var body = jsonEncode(<String, int>{
                     'no_of_char':

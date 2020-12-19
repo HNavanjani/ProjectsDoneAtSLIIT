@@ -262,6 +262,8 @@ class AdminPageState extends State<AdminPage2> {
                     ),
                     color: Colors.orange,
                     onPressed: () {
+                      newlyAddedWord = wordControler.text;
+                      hintOfNewlyAddedWord = hintControler.text;
                       addDefaultQuestions();
 
                       showMessage(BuildContext context) {
@@ -306,6 +308,8 @@ class AdminPageState extends State<AdminPage2> {
                     ),
                     color: Colors.green,
                     onPressed: () {
+                      newlyAddedWord = wordControler.text;
+                      hintOfNewlyAddedWord = hintControler.text;
                       Navigator.of(context).push(new MaterialPageRoute(
                           builder: (BuildContext context) => new AdminPage()));
                     },
